@@ -7,7 +7,7 @@
 % ---------------------------------------------------------------------------- %
 % Size of the margin
 \newlength{\margin}
-\setlength{\margin}{25mm}
+\setlength{\margin}{20mm}
 
 % Size of the left column
 \newlength{\leftcol}
@@ -205,6 +205,11 @@
   {\itshape #2}
 }
 
+\newcommand{\worktitleSP}[2]{
+  {\bfseries{#1}}  
+  {\itshape #2}
+}
+
 % ---------------------------------------------------------------------------- %
 %                               ENVIRONMENTS                                   %
 % ---------------------------------------------------------------------------- %
@@ -220,7 +225,7 @@
   \par\noindent
   \begin{tabular}{
       @{}>{\raggedright\arraybackslash}S{p{\leftcol}}
-      @{}>{\raggedright\arraybackslash}S{p{\rightcol}}
+      @{}>{\raggedright\arraybackslash}S{p{\rightcol + .75cm}}
       @{}
     }
   }
